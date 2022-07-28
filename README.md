@@ -73,7 +73,7 @@ Ahi mismo agregaremos unas reglas de exclusión en la sección de **rules**:
 					{
 						"ignoreStatic": true
 					}
-				]
+				],
 			}
 ```
 
