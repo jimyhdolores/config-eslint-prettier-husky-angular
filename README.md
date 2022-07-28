@@ -2,6 +2,38 @@
 
 Este es un repositorio base usando la versión 14 de Angular, tengan en cuenta que las librerías que usemos pueden cambiar su implementación en el tiempo, asi que deben de adaptar el proyecto de acuerdo a esos cambios.
 
+## Extensiones VSCode y Tips
+
+Agregaremos las extensiones de ESLint y Prettier, luego iran a la configuración del vscode y pegaran lo siguiente (miren el video para que vean como lo hago):
+
+```json
+"editor.formatOnSave": true,
+  "prettier.requireConfig": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.printWidth": 120
+```
+
 ## Migracion TSLint a ESLint Angular < v12
 
 Recuerda que estos pasos solo aplica a las versiones que estan antes de la versión 12, ya que esas versiones usaban TSLint y generaban un archivo llamado **_tslint.json_**.
@@ -66,6 +98,12 @@ Ahi mismo agregaremos unas reglas de exclusión en la sección de **rules**:
 						"type": "element",
 						"prefix": "app",
 						"style": "kebab-case"
+					}
+				],
+				"@typescript-eslint/unbound-method": [
+					"error",
+					{
+						"ignoreStatic": true
 					}
 				],
 				"@typescript-eslint/explicit-function-return-type": ["error"],
