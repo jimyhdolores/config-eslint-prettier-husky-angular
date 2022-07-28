@@ -68,12 +68,8 @@ Ahi mismo agregaremos unas reglas de exclusión en la sección de **rules**:
 						"style": "kebab-case"
 					}
 				],
-				"@typescript-eslint/unbound-method": [
-					"error",
-					{
-						"ignoreStatic": true
-					}
-				],
+				"@typescript-eslint/explicit-function-return-type": ["error"],
+				"@typescript-eslint/no-useless-constructor": ["error"]
 			}
 ```
 
