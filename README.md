@@ -73,6 +73,8 @@ Ahi mismo agregaremos unas reglas de exclusión en la sección de **rules**:
 			}
 ```
 
+Puedes encontrar todas las reglas para TypeScript en este link: https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
+
 Configuración para los archivos HTML:
 
 ```json
