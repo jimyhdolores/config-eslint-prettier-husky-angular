@@ -50,9 +50,10 @@ Cuando termine de ejecutar esos comandos ya puedes eliminar el archivo **_tslint
 ## Instalación EsLint Angular >= v12
 
 Esta configuración solo aplica si usas angular versión 12 o superior.
+AL momento de esta edición de MitoCode la versión de esta librería para angular 14 es 14.0.2 pero presenta problemas al ejecutar el comando **ng lint**, por eso usaremos la versión 14.0.0 aqui no hay problemas.
 
 ```
-ng add @angular-eslint/schematics
+ng add @angular-eslint/schematics@14.0.0
 ```
 
 más información en: https://github.com/angular-eslint/angular-eslint
@@ -141,19 +142,19 @@ dentro del archivo **.prettierrc** coloca lo siguiente:
 
 ```json
 {
-  "arrowParens": "always",
-  "bracketSpacing": true,
-  "insertPragma": false,
-  "printWidth": 120,
-  "proseWrap": "preserve",
-  "quoteProps": "as-needed",
-  "requirePragma": false,
-  "semi": true,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "trailingComma": "none",
-  "useTabs": true,
-  "endOfLine": "auto"
+	"arrowParens": "always",
+	"bracketSpacing": true,
+	"insertPragma": false,
+	"printWidth": 120,
+	"proseWrap": "preserve",
+	"quoteProps": "as-needed",
+	"requirePragma": false,
+	"semi": true,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"trailingComma": "none",
+	"useTabs": true,
+	"endOfLine": "auto"
 }
 ```
 
